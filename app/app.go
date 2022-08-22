@@ -136,7 +136,6 @@ import (
 	"github.com/evmos/evmos/v6/x/vesting"
 	vestingkeeper "github.com/evmos/evmos/v6/x/vesting/keeper"
 	vestingtypes "github.com/evmos/evmos/v6/x/vesting/types"
-	"github.com/relevant-community/oracle/x/atom/types"
 )
 
 func init() {
