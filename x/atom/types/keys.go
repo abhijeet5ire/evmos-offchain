@@ -20,6 +20,11 @@ const (
 
 )
 
+var (
+	// 0x00 -> Dec
+	AtomUsdKey = []byte{0x00}
+)
+
 func KeyPrefix(p string) []byte {
 	return []byte(p)
 }
