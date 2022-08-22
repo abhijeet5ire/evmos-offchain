@@ -11,10 +11,10 @@ const (
 	RouterKey = ModuleName
 
 	// QuerierRoute defines the module's query routing key
-	// QuerierRoute = ModuleName
+	QuerierRoute = ModuleName
 
 	// MemStoreKey defines the in-memory store key
-	// MemStoreKey = "mem_atom"
+	MemStoreKey = "mem_atom"
 
 	AtomUsdClaim = "AtomUsdClaim"
 

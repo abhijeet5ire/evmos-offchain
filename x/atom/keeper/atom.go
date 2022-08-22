@@ -10,7 +10,7 @@ import (
 
 func (k Keeper) SetAtomUsd(ctx sdk.Context, atomUsd types.AtomUsd) {
 	store := ctx.KVStore(k.storeKey)
-	b := k.cdc.MustMarshalBinaryBare(&atomUsd)
+	b := k.cdc.MustMarshal(&atomUsd)
 	store.Set(types.AtomUsdKey, b)
 }
 
@@ -22,7 +22,7 @@ func (k Keeper) GetAtomUsd(ctx sdk.Context) *types.AtomUsd {
 	}
 
 	var atomUsd types.AtomUsd
-	k.cdc.MustUnmarshalBinaryBare(bz, &atomUsd)
+	k.cdc.MustUnmarshal(bz, &atomUsd)
 	return &atomUsd
 }
 
